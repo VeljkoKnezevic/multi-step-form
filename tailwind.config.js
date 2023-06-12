@@ -17,17 +17,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        "color-1": "#FDA214",
-        "color-2": "#BCCED9",
-        "color-3": "#304859",
-        "color-4": "#152938",
-        "color-5": "#F2F2F2",
-        "color-6": "#7191A5",
-        "color-7": "#6395B8",
-        "color-8": "#FCFCFC",
+        "sky-blue": "#BEE2FD",
+        denim: "#022959",
       },
       fontFamily: {
-        primary: ["Atkinson Hyperlegible", "sans-serif"],
+        ubuntu: ["ubuntu", "sans-serif"],
       },
     },
   },
