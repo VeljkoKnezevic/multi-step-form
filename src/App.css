@@ -19,6 +19,6 @@
     src: url(/fonts/Ubuntu-Bold.ttf);
   }
   body {
-    @apply font-ubuntu;
+    @apply bg-bg font-ubuntu;
   }
 }

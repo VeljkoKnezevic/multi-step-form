@@ -19,9 +19,14 @@ module.exports = {
       colors: {
         "sky-blue": "#BEE2FD",
         denim: "#022959",
+        bg: "#EFF5FF",
+        grey: "#9699AA",
       },
       fontFamily: {
         ubuntu: ["ubuntu", "sans-serif"],
+      },
+      boxShadow: {
+        custom: "0px 25px 40px -20px rgba(0, 0, 0, 0.0951141)",
       },
     },
   },

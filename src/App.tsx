@@ -1,17 +1,33 @@
 import { useState } from "react";
 import "./App.css";
 import Stepper from "./components/Stepper";
-import { StepperStateProps } from "./types";
+import { StepperStateProps, UserDataProps } from "./types";
+import Content from "./components/Content";
 
 const App = () => {
   const [stepCount, setStepCount] = useState<StepperStateProps>(1);
+  const [userData, setUserData] = useState<UserDataProps | undefined>();
+
+  const updateUserData = (data: UserDataProps) => {
+    setUserData(data);
+  };
+
+  const updateStepCount = (count: StepperStateProps) => {
+    setStepCount(count);
+  };
 
   return (
     <>
-      <header className="h-[172px] w-full bg-[url('/images/bg-sidebar-mobile.svg')]">
+      <aside className="h-[172px] w-full bg-[url('/images/bg-sidebar-mobile.svg')]">
         <Stepper stepCount={stepCount} />
-      </header>
-      <main></main>
+      </aside>
+      <main>
+        <Content
+          stepCount={stepCount}
+          updateStepCount={updateStepCount}
+          updateUserData={updateUserData}
+        />
+      </main>
     </>
   );
 };
