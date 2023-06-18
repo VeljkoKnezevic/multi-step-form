@@ -20,3 +20,5 @@ export type Para =
   | "You have the option of monthly or yearly billing."
   | "Add-ons help enhance your gaming experience."
   | "Double-check everything looks OK before confirming.";
+
+export type TimeProps = "Monthly" | "Yearly";

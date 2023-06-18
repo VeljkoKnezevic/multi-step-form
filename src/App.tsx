@@ -5,7 +5,7 @@ import { StepperStateProps, UserDataProps } from "./types";
 import Content from "./components/Content";
 
 const App = () => {
-  const [stepCount, setStepCount] = useState<StepperStateProps>(2);
+  const [stepCount, setStepCount] = useState<StepperStateProps>(3);
   const [userData, setUserData] = useState<UserDataProps | undefined>();
 
   const updateUserData = (data: UserDataProps) => {
