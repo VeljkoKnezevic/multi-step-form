@@ -5,15 +5,15 @@ import { StepperStateProps, UserDataProps } from "./types";
 import Content from "./components/Content";
 
 const App = () => {
-  const [stepCount, setStepCount] = useState<StepperStateProps>(1);
+  const [stepCount, setStepCount] = useState<StepperStateProps>(2);
   const [userData, setUserData] = useState<UserDataProps | undefined>();
 
   const updateUserData = (data: UserDataProps) => {
     setUserData(data);
   };
 
-  const updateStepCount = (count: StepperStateProps) => {
-    setStepCount(count);
+  const updateStepCount = (count: number) => {
+    setStepCount(count as StepperStateProps);
   };
 
   return (

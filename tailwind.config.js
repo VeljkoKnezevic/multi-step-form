@@ -22,6 +22,7 @@ module.exports = {
         bg: "#EFF5FF",
         grey: "#9699AA",
         "light-grey": "#D6D9E6",
+        purple: "#483EFF",
       },
       fontFamily: {
         ubuntu: ["ubuntu", "sans-serif"],
